@@ -12,6 +12,7 @@ import SwiftUI
  */
 struct HomeView: View {
     @State private var habits: [Habit] = [Habit]()
+    @State private var showingAddHabitSheet = false;
     
     var body: some View {
         VStack {
@@ -20,6 +21,9 @@ struct HomeView: View {
             }
             Spacer()
         }
+        .sheet(isPresented: $showingAddHabitSheet) {
+            AddHabitView(addAction: addHabit(habit:))
+        }
         .toolbar {
             Button("Add default habits") {
                 habits.append(Habit(category: "Test",
@@ -27,7 +31,14 @@ struct HomeView: View {
                                     description: "Description",
                                     completionGoal: 10))
             }
+            Button("Add custom habits") {
+                showingAddHabitSheet.toggle()
+            }
         }
+    }
+    
+    func addHabit(habit: Habit) {
+        habits.append(habit)
     }
 }
 
