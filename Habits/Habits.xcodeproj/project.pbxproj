@@ -14,6 +14,7 @@
 		753264682C03D0BE00D215E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753264672C03D0BE00D215E5 /* HomeView.swift */; };
 		7532646D2C03D13300D215E5 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7532646C2C03D13300D215E5 /* Habit.swift */; };
 		75C5011D2C06358700017E3A /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C5011C2C06358700017E3A /* AddHabitView.swift */; };
+		75C5011F2C06657200017E3A /* HabitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C5011E2C06657200017E3A /* HabitRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		753264672C03D0BE00D215E5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7532646C2C03D13300D215E5 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		75C5011C2C06358700017E3A /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
+		75C5011E2C06657200017E3A /* HabitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				7532645A2C03D05800D215E5 /* ContentView.swift */,
 				753264672C03D0BE00D215E5 /* HomeView.swift */,
 				75C5011C2C06358700017E3A /* AddHabitView.swift */,
+				75C5011E2C06657200017E3A /* HabitRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				753264682C03D0BE00D215E5 /* HomeView.swift in Sources */,
 				75C5011D2C06358700017E3A /* AddHabitView.swift in Sources */,
+				75C5011F2C06657200017E3A /* HabitRowView.swift in Sources */,
 				7532645B2C03D05800D215E5 /* ContentView.swift in Sources */,
 				7532646D2C03D13300D215E5 /* Habit.swift in Sources */,
 				753264592C03D05800D215E5 /* HabitsApp.swift in Sources */,

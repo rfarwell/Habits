@@ -16,11 +16,14 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
-            ForEach(habits) {habit in
-                Text(habit.title)
+            ScrollView {
+                ForEach(habits) {habit in
+                    HabitRowView(habit: habit)
+                }
             }
-            Spacer()
         }
+        .navigationTitle("HabitWise")
+        .padding()
         .sheet(isPresented: $showingAddHabitSheet) {
             AddHabitView(addAction: addHabit(habit:))
         }
@@ -31,7 +34,7 @@ struct HomeView: View {
                                     description: "Description",
                                     completionGoal: 10))
             }
-            Button("Add custom habits") {
+            Button("Add custom habit") {
                 showingAddHabitSheet.toggle()
             }
         }
@@ -39,6 +42,14 @@ struct HomeView: View {
     
     func addHabit(habit: Habit) {
         habits.append(habit)
+    }
+    
+    func replaceHabit() {
+        //todo this will be used when editing a habit - from the habit detail view
+    }
+    
+    func deleteHabit() {
+        //todo this will be used when deleting a habit - from the habit detail view
     }
 }
 

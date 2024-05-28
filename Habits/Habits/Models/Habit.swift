@@ -21,4 +21,6 @@ class Habit: Identifiable, ObservableObject {
         self.completionGoal = completionGoal
         self.completedDates = [Date]()
     }
+    
+    static let defaultHabit = Habit(category: "Chore", title: "Make bed", description: "Make the bed in the morning", completionGoal: 365)
 }
